@@ -22,9 +22,9 @@ class UserRepository
     /**
      * 傳回所有User
      *
-     * @return Collection
+     * @return Collection|User[]
      */
-    public function getAllUsers()
+    public function getAllUsers() : Collection
     {
         return $this->user->all();
     }
